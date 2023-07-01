@@ -12,7 +12,7 @@ export default function ExperienceCard({
       <div
         className="rounded-xl hover:bg-[#ff7a57]
          transition-colors ease-in-out duration-500
-         shadow-lg lg:max-w-[80%]
+         shadow-lg lg:max-w-[80%] border-2 border-gray-200
       "
       >
         <div className="bg-gray-500 rounded-t-xl max-h-[150px] p-2">

@@ -98,8 +98,8 @@ function App() {
       <section className="mt-6 p-8" ref={skillSection}>
         <h6 className="text-4xl font-semibold text-gray-600">Skills</h6>
         <div
-          className="p-5 border-2 border-gray-100 shadow-sm mt-4 container mx-auto md:max-w-[80%]
-          hover:bg-[#ff7a57] transition-colors ease-in-out duration-300
+          className="p-5 border-2 border-gray-100 mt-4 container mx-auto md:max-w-[80%]
+          hover:bg-[#ff7a57] transition-colors ease-in-out duration-300 shadow-lg
         "
         >
           {skills.map((skill, index) => {
