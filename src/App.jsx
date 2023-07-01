@@ -76,7 +76,7 @@ function App() {
       <div className="md:grid grid-cols-4 text-center gap-4 my-10 mx-5">
         <div className="border-4 border-gray-500 shadow-xl">
           <img
-            className="cover h-[100%]"
+            className="cover h-full"
             src="src\assets\img\avatar.jpg"
             alt="avatar"
           />
@@ -118,7 +118,7 @@ function App() {
             <>
               <EducationItem key={index} {...education} />
               {index < educations.length - 1 && (
-                <div className="w-[100%] h-1 bg-gray-500 opacity-[90%] mx-0 my-4"></div>
+                <div className="w-full h-1 bg-gray-500 opacity-[90%] mx-0 my-4"></div>
               )}
             </>
           );
@@ -190,7 +190,7 @@ function App() {
             <>
               <PublicationItem key={index} {...publication} />
               {index < publications.length - 1 && (
-                <div className="w-[100%] h-1 bg-gray-500 opacity-[90%] mx-0 my-4"></div>
+                <div className="w-full h-1 bg-gray-500 opacity-[90%] mx-0 my-4"></div>
               )}
             </>
           );

@@ -16,10 +16,12 @@ export default function ExperienceCard({
       "
       >
         <div className="bg-gray-600 rounded-t-xl max-h-[150px] p-2">
-          <h6 className="text-3xl text-gray-300 p-5 font-bold">{companyName}</h6>
+          <h6 className="text-3xl text-gray-300 p-5 font-bold">
+            {companyName}
+          </h6>
           <div className="w-[125px] bg-white relative top-0 mx-auto p-[5px] rounded-full">
             <img
-              className="w-[100%] aspect-square rounded-full"
+              className="w-full aspect-square rounded-full"
               src={"/src/assets/img/" + logo}
               alt="amarischool"
             />
