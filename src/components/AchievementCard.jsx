@@ -17,7 +17,7 @@ export default function AchievementCard({ image, title, link }) {
           />
         </div>
         <div className="pt-6">
-          <h6 className="text-[1.15rem] text-gray-300 font-semibold">
+          <h6 className="text-[1.15rem] text-gray-300 font-semibold px-3">
             {title}
           </h6>
           <Button text="Certificate" link={link} />
