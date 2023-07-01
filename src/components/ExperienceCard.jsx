@@ -36,7 +36,7 @@ export default function ExperienceCard({
           <p className="text-[1.25rem] font-semibold mb-3 text-gray-500">
             {duration}
           </p>
-          <p className="text-[1.125rem] font-normal text-gray-600">{details}</p>
+          <p className="text-gray-500 text-[1.125rem] font-medium">{details}</p>
         </div>
       </div>
     </>

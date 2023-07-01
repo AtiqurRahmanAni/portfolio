@@ -25,10 +25,10 @@ export default function EducationItem({
           </h6>
           <p className="text-lg font-medium  mt-2">{degree}</p>
           <p className="text-[1.25rem] font-medium text-gray-500">{result}</p>
-          <p className="text-[1.20rem]  font-normal text-gray-500">
+          <p className="text-[1.20rem]  font-medium text-gray-500">
             {duration}
           </p>
-          <p className="text-[1.20rem] font-normal text-gray-500">{location}</p>
+          <p className="text-[1.20rem] font-medium text-gray-500">{location}</p>
         </div>
       </div>
     </>

@@ -12,7 +12,7 @@ export default function ProblemSolvingCard({ image, title, link }) {
         >
           <div className="w-full rounded-t-xl">
             <img
-              className="object-fit w-full max-h-60 rounded-t-xl"
+              className="object-fit w-full rounded-t-xl max-h-44 md:max-h-60"
               src={"./src/assets/img/" + image}
               alt="cf"
             />

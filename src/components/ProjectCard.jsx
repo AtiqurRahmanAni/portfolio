@@ -20,7 +20,9 @@ export default function ProjectCard({
         >
           {projectName}
         </h6>
-        <p className="text-gray-500 text-[1.125rem] font-[500] px-4">{description}</p>
+        <p className="text-gray-500 text-[1.125rem] font-medium px-4">
+          {description}
+        </p>
         <div>
           <Button key={1} text="Github" link={githubLink} />
           <Button key={2} text="Demo video" link={youtubeLink} />
