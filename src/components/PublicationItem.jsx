@@ -20,29 +20,29 @@ export default function PublicationItem({
           alt="aust"
         />
         <div className="flex-1 text-center lg:text-start">
-          <h6 className="text-lg font-bold text-gray-500 !leading-tight">
+          <h6 className="text-lg font-bold text-gray-300 !leading-tight">
             {paperTitle}
           </h6>
-          <p className="text-[1.25rem] font-semibold text-gray-500 mt-2">
+          <p className="text-[1.25rem] font-semibold text-gray-300 mt-2">
             Publication Year: {publicationYear}
           </p>
-          <p className="text-[1.25rem] font-semibold text-gray-500">
+          <p className="text-[1.25rem] font-semibold text-gray-300">
             Conference name: {conferenceName}
           </p>
-          <p className="text-[1.25rem]  font-semibold text-gray-500">
+          <p className="text-[1.25rem]  font-semibold text-gray-300">
             Conference location: {conferenceLocation}
           </p>
           <div className="flex items-center justify-center gap-5 lg:justify-start">
-            <p className="text-[1.25rem]  font-semibold text-gray-500">
-              Publisher: IEEE
+            <p className="text-[1.25rem]  font-semibold text-gray-300">
+              Publisher:&nbsp;
+              <a
+                href={link}
+                target="_blank"
+                className="text-sky-500 text-[1.25rem] font-semibold underline "
+              >
+                IEEE Xplore
+              </a>
             </p>
-            <a
-              href={link}
-              target="_blank"
-              className="material-symbols-outlined text-gray-500 text-xl"
-            >
-              link
-            </a>
           </div>
         </div>
       </div>

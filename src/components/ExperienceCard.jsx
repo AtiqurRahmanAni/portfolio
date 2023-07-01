@@ -10,13 +10,13 @@ export default function ExperienceCard({
   return (
     <>
       <div
-        className="rounded-xl hover:bg-[#ff7a57]
+        className="rounded-xl hover:bg-sky-500
          transition-colors ease-in-out duration-500
-         shadow-lg lg:max-w-[80%] border-2 border-gray-200
+         shadow-lg lg:max-w-[80%] border-2 border-gray-500
       "
       >
-        <div className="bg-gray-500 rounded-t-xl max-h-[150px] p-2">
-          <h6 className="text-3xl text-white p-5 font-bold">{companyName}</h6>
+        <div className="bg-gray-600 rounded-t-xl max-h-[150px] p-2">
+          <h6 className="text-3xl text-gray-300 p-5 font-bold">{companyName}</h6>
           <div className="w-[125px] bg-white relative top-0 mx-auto p-[5px] rounded-full">
             <img
               className="w-[100%] aspect-square rounded-full"
@@ -28,15 +28,15 @@ export default function ExperienceCard({
 
         <div className="p-8 mt-10">
           <h6
-            className="text-xl font-semibold mb-3 text-gray-600
+            className="text-xl font-semibold mb-3 text-gray-300
           "
           >
             {designation}
           </h6>
-          <p className="text-[1.25rem] font-semibold mb-3 text-gray-500">
+          <p className="text-[1.25rem] font-semibold mb-3 text-gray-300">
             {duration}
           </p>
-          <p className="text-gray-500 text-[1.125rem] font-medium">{details}</p>
+          <p className="text-gray-300 text-[1.125rem] font-medium">{details}</p>
         </div>
       </div>
     </>

@@ -47,21 +47,21 @@ function App() {
 
       <div
         className="flex flex-col items-center
-      justify-center w-auto h-[88vh] min-h-[650px] 
-      border-b-[1px] border-solid-[#dee2e6]
+      justify-center w-auto h-[94vh] min-h-[650px] 
+      border-b-[1px] border-sky-500
       "
       >
-        <h4 className="mb-0 text-2xl text-gray-500 font-semibold">
+        <h4 className="mb-0 text-2xl text-gray-300 font-semibold">
           Hello, I'm
         </h4>
-        <h1 className="text-[71px] font-bold text-gray-600">
+        <h1 className="text-[71px] font-bold text-gray-300">
           Md. Atiqur Rahman
         </h1>
-        <p className="text-xl text-gray-500">Junior Software Engineer</p>
+        <p className="text-xl text-gray-300">Junior Software Engineer</p>
 
         <button
           className="inline-block my-0 mx-[2px]
-          bg-[#ff7a57] border-[#ff7a57] text-gray-200 font-semibold
+          bg-sky-500 border-[#ff7a57] text-gray-200 font-semibold
            py-[0.65rem] px-[0.9rem] text-sm rounded-[0.25rem]
           mt-8 hover:text-white transition-colors ease-in-out duration-200"
         >
@@ -74,7 +74,7 @@ function App() {
         </button>
       </div>
       <div className="md:grid grid-cols-4 text-center gap-4 my-10 mx-5">
-        <div className="border-4 border-white shadow-xl">
+        <div className="border-4 border-gray-500 shadow-xl">
           <img
             className="cover h-[100%]"
             src="src\assets\img\avatar.jpg"
@@ -82,11 +82,11 @@ function App() {
           />
         </div>
         <div className="sm:text-start col-span-3">
-          <h4 className="mb-0 text-2xl text-gray-700 font-semibold">
+          <h4 className="mb-0 text-2xl text-gray-300 font-semibold">
             Md. Atiqur Rahman
           </h4>
-          <p className="text-xl mt-2 text-gray-600">Junior Software Engineer</p>
-          <p className="text-lg text-gray-500 mt-4">
+          <p className="text-xl mt-2 text-gray-300">Junior Software Engineer</p>
+          <p className="text-lg text-gray-300 mt-4">
             I am a B.Sc. graduate student from the Ahsanullah University of
             Science and Technology. Keen to pursue a career as a professional
             programmer.
@@ -96,10 +96,10 @@ function App() {
 
       {/* ---------------Skills Section----------------- */}
       <section className="mt-6 p-8" ref={skillSection}>
-        <h6 className="text-4xl font-semibold text-gray-600">Skills</h6>
+        <h6 className="text-4xl font-semibold text-gray-300">Skills</h6>
         <div
-          className="p-5 border-2 border-gray-100 mt-4 container mx-auto md:max-w-[80%]
-          hover:bg-[#ff7a57] transition-colors ease-in-out duration-300 shadow-lg
+          className="p-5 border-2 border-gray-500 mt-4 container mx-auto md:max-w-[80%]
+          hover:bg-sky-500 transition-colors ease-in-out duration-300 shadow-lg
         "
         >
           {skills.map((skill, index) => {
@@ -110,7 +110,7 @@ function App() {
 
       {/* ---------------Education Section----------------- */}
       <section className="mt-6 p-8" ref={educationSection}>
-        <h6 className="text-4xl font-semibold text-gray-600 mb-10">
+        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
           Education
         </h6>
         {educations.map((education, index) => {
@@ -127,7 +127,7 @@ function App() {
 
       {/* ---------------Experience Section----------------- */}
       <section className="mt-6 p-8" ref={experienceSection}>
-        <h6 className="text-4xl font-semibold text-gray-600 mb-10">
+        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
           Experience
         </h6>
         <div className="grid grid-cols-1 gap-4 place-items-center items-stretch md:grid-cols-2">
@@ -139,7 +139,7 @@ function App() {
 
       {/* ---------------Achievement Section----------------- */}
       <section className="mt-6 p-8" ref={achievementSection}>
-        <h6 className="text-4xl font-semibold text-gray-600 mb-10">
+        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
           Achievement
         </h6>
         <div
@@ -154,7 +154,7 @@ function App() {
 
       {/* ---------------Problem Solving Section----------------- */}
       <section className="mt-6 p-8" ref={problemSolving}>
-        <h6 className="text-4xl font-semibold text-gray-600 mb-10">
+        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
           Problem Solving
         </h6>
         <div
@@ -169,7 +169,7 @@ function App() {
 
       {/* ---------------Projects Section----------------- */}
       <section className="mt-6 p-8" ref={projectSection}>
-        <h6 className="text-4xl font-semibold text-gray-600 mb-10">Projects</h6>
+        <h6 className="text-4xl font-semibold text-gray-300 mb-10">Projects</h6>
         <div
           className="grid grid-cols-1 gap-5 place-items-center 
           items-stretch md:grid-cols-2 lg:grid-cols-3"
@@ -182,7 +182,7 @@ function App() {
 
       {/* ---------------Publications Section----------------- */}
       <section className="mt-6 p-8" ref={publicationSection}>
-        <h6 className="text-4xl font-semibold text-gray-600 mb-10">
+        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
           Research & Publications
         </h6>
         {publications.map((publication, index) => {

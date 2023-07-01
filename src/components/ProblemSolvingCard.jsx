@@ -7,7 +7,7 @@ export default function ProblemSolvingCard({ image, title, link }) {
       <>
         <div
           className="min-w-full pb-2 rounded-xl shadow-lg 
-          border-2 border-gray-200 hover:bg-[#ff7a57]
+          border-2 border-gray-500 hover:bg-sky-500
           transition-colors ease-in-out duration-500"
         >
           <div className="w-full rounded-t-xl">
@@ -18,7 +18,7 @@ export default function ProblemSolvingCard({ image, title, link }) {
             />
           </div>
           <div className="pt-6">
-            <h6 className="text-[1.15rem] text-gray-500 font-semibold">
+            <h6 className="text-[1.15rem] text-gray-300 font-semibold">
               {title}
             </h6>
             <Button text="Profile" link={link} />
