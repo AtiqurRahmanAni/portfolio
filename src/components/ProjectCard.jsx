@@ -11,7 +11,7 @@ export default function ProjectCard({
     <>
       <div
         className="min-w-full p-4 rounded-xl shadow-lg 
-          border-2 border-gray-500 hover:bg-sky-500
+          border-2 border-gray-500 hover:bg-sky-700
           transition-colors ease-in-out duration-500"
       >
         <h6

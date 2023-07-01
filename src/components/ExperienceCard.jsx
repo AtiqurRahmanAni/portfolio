@@ -10,7 +10,7 @@ export default function ExperienceCard({
   return (
     <>
       <div
-        className="rounded-xl hover:bg-sky-500
+        className="rounded-xl hover:bg-sky-700
          transition-colors ease-in-out duration-500
          shadow-lg lg:max-w-[80%] border-2 border-gray-500
       "
@@ -22,7 +22,7 @@ export default function ExperienceCard({
           <div className="w-[125px] bg-white relative top-0 mx-auto p-[5px] rounded-full">
             <img
               className="w-full aspect-square rounded-full"
-              src={"/src/assets/img/" + logo}
+              src={logo}
               alt="amarischool"
             />
           </div>

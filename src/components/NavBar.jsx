@@ -9,7 +9,7 @@ export default function Navbar({
   projectSection,
   publicationSection,
 }) {
-  const [isVisible, setVisible] = useState(true);
+  const [isVisible, setVisible] = useState(false);
 
   return (
     <>

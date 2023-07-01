@@ -75,11 +75,7 @@ function App() {
       </div>
       <div className="md:grid grid-cols-4 text-center gap-4 my-10 mx-5">
         <div className="border-4 border-gray-500 shadow-xl">
-          <img
-            className="cover h-full"
-            src="src\assets\img\avatar.jpg"
-            alt="avatar"
-          />
+          <img className="cover h-full" src="avatar.jpg" alt="avatar" />
         </div>
         <div className="sm:text-start col-span-3">
           <h4 className="mb-0 text-2xl text-gray-300 font-semibold">
@@ -99,7 +95,7 @@ function App() {
         <h6 className="text-4xl font-semibold text-gray-300">Skills</h6>
         <div
           className="p-5 border-2 border-gray-500 mt-4 container mx-auto md:max-w-[80%]
-          hover:bg-sky-500 transition-colors ease-in-out duration-300 shadow-lg
+          hover:bg-sky-700 transition-colors ease-in-out duration-300 shadow-lg
         "
         >
           {skills.map((skill, index) => {

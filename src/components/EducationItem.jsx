@@ -14,11 +14,7 @@ export default function EducationItem({
         className="flex justify-center 
         items-center flex-col gap-2 md:flex-row md:gap-10 md:text-left"
       >
-        <img
-          className="max-w-[120px] max-h-[150px] "
-          src={"src/assets/img/" + image}
-          alt="aust"
-        />
+        <img className="max-w-[120px] max-h-[150px] " src={image} alt="aust" />
         <div className="flex-1">
           <h6 className="text-2xl font-semibold text-gray-300">
             {institutionName}

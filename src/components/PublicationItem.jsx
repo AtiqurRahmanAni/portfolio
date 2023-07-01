@@ -16,7 +16,7 @@ export default function PublicationItem({
       >
         <img
           className="max-w-[400px] max-h-[210px] hidden lg:block"
-          src={`src/assets/img/${image}`}
+          src={image}
           alt="aust"
         />
         <div className="flex-1 text-center lg:text-start">
