@@ -73,7 +73,7 @@ function App() {
           </a>
         </button>
       </div>
-      <div className="md:grid grid-cols-4 text-center gap-4 my-10 mx-5">
+      <div className="md:grid grid-cols-4 text-center gap-4 my-10 mx-5 p-3 md:p-0">
         <div className="border-4 border-gray-500 shadow-xl">
           <img
             className="cover h-full"
