@@ -47,7 +47,7 @@ export default function Navbar({
 
         <span
           className="font-MaterialIcons text-4xl text-gray-200 
-          cursor-pointer fixed right-5 top-3 lg:hidden"
+          cursor-pointer fixed right-3 top-2 lg:hidden"
           onClick={() => setVisible((state) => !state)}
         >
           {isVisible ? "close" : "menu"}
