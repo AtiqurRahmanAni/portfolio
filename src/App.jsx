@@ -75,7 +75,11 @@ function App() {
       </div>
       <div className="md:grid grid-cols-4 text-center gap-4 my-10 mx-5">
         <div className="border-4 border-gray-500 shadow-xl">
-          <img className="cover h-full" src="./images/avatar.jpg" alt="avatar" />
+          <img
+            className="cover h-full"
+            src="./images/avatar.jpg"
+            alt="avatar"
+          />
         </div>
         <div className="sm:text-start col-span-3">
           <h4 className="mb-0 text-2xl text-gray-300 font-semibold">
