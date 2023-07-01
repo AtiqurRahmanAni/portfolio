@@ -36,7 +36,7 @@
       "result": "CGPA - 3.841/4.00",
       "duration": "January-2019 - June-2023",
       "location": "Tejgaon, Dhaka",
-      "image": "./austlogo.png"
+      "image": "./images/austlogo.png"
     },
     {
       "institutionName": "Government Tolaram College",
@@ -44,7 +44,7 @@
       "result": "GPA - 4.75/5.00",
       "duration": "2016 - 2018",
       "location": "Narayanganj, Dhaka",
-      "image": "./clglogo.png"
+      "image": "./images/clglogo.png"
     },
     {
       "institutionName": "Bangladesh Tea Research Institute High School",
@@ -52,20 +52,20 @@
       "result": "GPA - 5.00/5.00",
       "duration": "2011 - 2016",
       "location": "Sreemangal, Moulvibazar",
-      "image": "./btrilogo.png"
+      "image": "./images/btrilogo.png"
     }
   ],
   "experiences": [
     {
       "companyName": "Amar iSchool",
-      "logo": "./ischoollogo.png",
+      "logo": "./images/ischoollogo.png",
       "designation": "Course Instructor",
       "duration": "Aug 2020 - Aug 2021",
       "details": "I was instructor of two course. One is Arduino for beginner and other one is C# for uninitialized"
     },
     {
       "companyName": "Pioneer Alpha",
-      "logo": "./pioneerlogo.png",
+      "logo": "./images/pioneerlogo.png",
       "designation": "Jr. Software Engineer",
       "duration": "May 2023 - Present",
       "details": "Developing API endpoint using Django rest-framework. Dockerized websites and deployed them into server. Did some R&D job on Machine learning."
@@ -73,59 +73,59 @@
   ],
   "achievements": [
     {
-      "image": "./bestpaper.png",
+      "image": "./images/bestpaper.png",
       "title": "Best paper certificate at IEEE CCWC",
       "link": "https://drive.google.com/file/d/19b9uqVvAvdnwi8eUv9zyhedf3MNtcTZz/view?usp=drive_link"
     },
     {
-      "image": "./techshop.png",
+      "image": "./images/techshop.png",
       "title": "1st winner of TechshopBD Project Competition",
       "link": "https://drive.google.com/file/d/1k3b8AuIczEPnv6p9-dqnxpwOqA955ka0/view?usp=sharing"
     },
     {
-      "image": "./hult.png",
+      "image": "./images/hult.png",
       "title": "On campus winner of Hult Prize at AUST",
       "link": "https://drive.google.com/file/d/1nGhQuWgeAcdLz7tfeTe1VQrjnmsxWYov/view?usp=drive_link"
     },
     {
-      "image": "./cognibat.png",
+      "image": "./images/cognibat.png",
       "title": "Champion of the Robo-Soccer event in CogniBat21",
       "link": "https://drive.google.com/file/d/1AqaTIs4PnPYBwS-v-lfIcBBoUSotRWrs/view?usp=drive_link"
     },
     {
-      "image": "./matlab.png",
+      "image": "./images/matlab.png",
       "title": "Winner of Building Standalone Applications using MATLAB",
       "link": "https://drive.google.com/file/d/1rXVJTt6tCaeGwfaaoVJRq8GpL8r8v6ph/view?usp=drive_link"
     }
   ],
   "problemSolving": [
     {
-      "image": "./codeforces.png",
+      "image": "./images/codeforces.png",
       "title": "Max rating: 1372 (Pupil Rank)",
       "link": "https://codeforces.com/profile/Atiqur_Rahman99"
     },
     {
-      "image": "./codechef.jpg",
+      "image": "./images/codechef.jpg",
       "title": "Max rating: 1599 (Two Star)",
       "link": "https://www.codechef.com/users/atiqur99"
     },
     {
-      "image": "./atcoder.jpg",
+      "image": "./images/atcoder.jpg",
       "title": "Max Rating: 339",
       "link": "https://atcoder.jp/users/atiqur99"
     },
     {
-      "image": "./uva.png",
+      "image": "./images/uva.png",
       "title": "126 problems solved",
       "link": "https://uhunt.onlinejudge.org/id/1025786"
     },
     {
-      "image": "./toph.png",
+      "image": "./images/toph.png",
       "title": "74 Problems solved",
       "link": "https://toph.co/u/atiqurrahman99"
     },
     {
-      "image": "./leetcode.png",
+      "image": "./images/leetcode.png",
       "title": "94* Problems solved",
       "link": "https://leetcode.com/Atiqur_rahman99/"
     }
@@ -157,7 +157,7 @@
       "conferenceName": "Computing and Communication Workshop and Conference",
       "conferenceLocation": "Las Vegas, NV, USA",
       "link": "https://ieeexplore.ieee.org/document/10099305",
-      "image": "./nlp.png"
+      "image": "./images/nlp.png"
     },
     {
       "paperTitle": "LFR Waiter: Arduino Based Android Application Controlled Waiter Robot",
@@ -165,7 +165,7 @@
       "conferenceName": "TENCON 2022 - 2022 IEEE Region 10 Conference (TENCON)",
       "conferenceLocation": "Hong Kong, China",
       "link": "https://ieeexplore.ieee.org/document/9977936",
-      "image": "./robotics.jpg"
+      "image": "./images/robotics.jpg"
     }
   ]
 }
