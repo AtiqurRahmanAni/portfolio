@@ -10,6 +10,12 @@ import ProblemSolvingCard from "./components/ProblemSolvingCard";
 import ProjectCard from "./components/ProjectCard";
 import PublicationItem from "./components/PublicationItem";
 import YoutubeCard from "./components/YoutubeCard";
+import {
+  TiSocialFacebookCircular,
+  TiSocialLinkedinCircular,
+  TiSocialGithubCircular,
+} from "react-icons/ti";
+import { IconContext } from "react-icons";
 
 function App() {
   const skills = data.skills;
@@ -20,7 +26,7 @@ function App() {
   const projects = data.projects;
   const publications = data.publications;
   const aboutMe = data.aboutMe;
-  const videos = data.videos;
+  // const videos = data.videos;
 
   const skillSection = useRef(null);
   const educationSection = useRef(null);
@@ -47,7 +53,7 @@ function App() {
         achievementSection={achievementSection}
         projectSection={projectSection}
         publicationSection={publicationSection}
-        youtubeSection={youtubeSection}
+        // youtubeSection={youtubeSection}
       />
 
       <div
@@ -63,7 +69,6 @@ function App() {
           Md. Atiqur Rahman
         </h1>
         <p className="text-xl text-gray-300">Junior Software Engineer</p>
-
         <button
           className="inline-block my-0 mx-[2px]
           bg-sky-500 border-[#ff7a57] text-gray-200 font-semibold
@@ -77,6 +82,31 @@ function App() {
             Download CV
           </a>
         </button>
+        <IconContext.Provider
+          value={{ className: "text-sky-500", size: "60px" }}
+        >
+          <div className="flex justify-center items-center gap-3 mt-8">
+            <a
+              href="https://www.facebook.com/profile.php?id=100004370326000"
+              target="_blank"
+            >
+              <TiSocialFacebookCircular />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/atiqur-rahman-06b0a41bb"
+              target="_blank"
+            >
+              <TiSocialLinkedinCircular />
+            </a>
+            <a
+              href="https://github.com/AtiqurRahmanAni/AtiqurRahmanAni"
+              target="_blank"
+            >
+              <TiSocialGithubCircular />
+            </a>
+          </div>
+        </IconContext.Provider>
+        ;
       </div>
       <div className="flex flex-col items-center justify-center p-5 mt-5 flex-wrap gap-6 lg:flex-row">
         <div className="border-4 border-gray-500 shadow-xl max-w-[20rem]">
@@ -198,7 +228,7 @@ function App() {
       </section>
 
       {/* ---------------Youtube Section----------------- */}
-      <section className="mt-6 p-8" ref={youtubeSection}>
+      {/* <section className="mt-6 p-8" ref={youtubeSection}>
         <h6 className="text-4xl font-semibold text-gray-300">YouTube</h6>
         <div className="my-6">
           <a
@@ -215,7 +245,7 @@ function App() {
             return <YoutubeCard key={index} link={link} />;
           })}
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

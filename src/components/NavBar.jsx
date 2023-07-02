@@ -8,7 +8,7 @@ export default function Navbar({
   achievementSection,
   projectSection,
   publicationSection,
-  youtubeSection,
+  // youtubeSection,
 }) {
   const [isVisible, setVisible] = useState(false);
 
@@ -44,7 +44,7 @@ export default function Navbar({
           <li onClick={() => scrollToSection(publicationSection)}>
             Publications
           </li>
-          <li onClick={() => scrollToSection(youtubeSection)}>YouTube</li>
+          {/* <li onClick={() => scrollToSection(youtubeSection)}>YouTube</li> */}
         </ul>
 
         <span
