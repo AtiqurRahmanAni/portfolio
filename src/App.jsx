@@ -106,7 +106,7 @@ function App() {
               <TiSocialGithubCircular />
             </a>
             <a
-              href="https://github.com/AtiqurRahmanAni/AtiqurRahmanAni"
+              href="https://www.youtube.com/@codingwitharduino7558"
               target="_blank"
             >
               <TiSocialYoutubeCircular />
