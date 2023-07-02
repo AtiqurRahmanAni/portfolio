@@ -206,7 +206,7 @@ function App() {
             target="_blank"
             className="text-sky-500 text-[1.25rem] font-semibold underline"
           >
-            My youTube channel link
+            My youtube channel link
           </a>
         </div>
 
