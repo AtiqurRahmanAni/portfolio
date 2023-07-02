@@ -6,7 +6,7 @@ export default function ProblemSolvingCard({ image, title, link }) {
     <>
       <>
         <div
-          className="min-w-full pb-2 rounded-xl shadow-lg 
+          className="min-w-[18rem] max-w-[25rem] flex-1 pb-2 rounded-xl shadow-lg 
           border-2 border-gray-500 hover:bg-sky-700
           transition-colors ease-in-out duration-500"
         >

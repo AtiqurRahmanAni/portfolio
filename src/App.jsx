@@ -14,6 +14,7 @@ import {
   TiSocialFacebookCircular,
   TiSocialLinkedinCircular,
   TiSocialGithubCircular,
+  TiSocialYoutubeCircular,
 } from "react-icons/ti";
 import { IconContext } from "react-icons";
 
@@ -72,7 +73,7 @@ function App() {
         <button
           className="inline-block my-0 mx-[2px]
           bg-sky-500 border-[#ff7a57] text-gray-200 font-semibold
-           py-[0.65rem] px-[0.9rem] text-sm rounded-[0.25rem]
+           py-[0.65rem] px-[0.9rem] text-base rounded-[0.25rem]
           mt-8 hover:text-white transition-colors ease-in-out duration-200"
         >
           <a
@@ -104,6 +105,12 @@ function App() {
             >
               <TiSocialGithubCircular />
             </a>
+            <a
+              href="https://github.com/AtiqurRahmanAni/AtiqurRahmanAni"
+              target="_blank"
+            >
+              <TiSocialYoutubeCircular />
+            </a>
           </div>
         </IconContext.Provider>
         ;
@@ -120,8 +127,10 @@ function App() {
           <h4 className="mb-0 text-2xl text-gray-300 font-semibold">
             Md. Atiqur Rahman
           </h4>
-          <p className="text-xl mt-2 text-gray-300">Junior Software Engineer</p>
-          <p className="text-[1.420rem] text-justify text-gray-300 mt-4">
+          <p className="text-xl mt-2 text-gray-300 font-semibold">
+            Junior Software Engineer
+          </p>
+          <p className="text-[1.4rem] text-center text-gray-300 mt-4 lg:text-justify lg:text-[1.415rem]">
             {aboutMe}
           </p>
         </div>
@@ -175,10 +184,7 @@ function App() {
         <h6 className="text-4xl font-semibold text-gray-300 mb-10">
           Achievement
         </h6>
-        <div
-          className="grid grid-cols-1 place-items-center items-stretch gap-5
-          md:grid-cols-2 lg:grid-cols-3"
-        >
+        <div className="flex justify-center items-stretch gap-4 flex-wrap">
           {achievements.map((achievement, index) => {
             return <AchievementCard key={index} {...achievement} />;
           })}
@@ -190,10 +196,7 @@ function App() {
         <h6 className="text-4xl font-semibold text-gray-300 mb-10">
           Problem Solving
         </h6>
-        <div
-          className="grid grid-cols-1 place-items-center items-stretch gap-5
-          md:grid-cols-2 lg:grid-cols-3"
-        >
+        <div className="flex justify-center items-center gap-4 flex-wrap">
           {problemSolving.map((ps, index) => {
             return <ProblemSolvingCard key={index} {...ps} />;
           })}

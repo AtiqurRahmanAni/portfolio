@@ -5,11 +5,11 @@ export default function AchievementCard({ image, title, link }) {
   return (
     <>
       <div
-        className="min-w-full pb-2 rounded-xl shadow-lg
+        className="min-w-[18rem] max-w-[25rem] flex-1 pb-2 rounded-xl shadow-lg
         border-2 border-gray-500 hover:bg-sky-700
         transition-colors ease-in-out duration-500"
       >
-        <div className="w-full rounded-t-xl">
+        <div className="rounded-t-xl">
           <img
             className="object-fit w-full rounded-t-xl max-h-44 md:max-h-60"
             src={image}
