@@ -17,6 +17,7 @@ import {
   TiSocialYoutubeCircular,
 } from "react-icons/ti";
 import { IconContext } from "react-icons";
+import Section from "./components/Section";
 
 function App() {
   const skills = data.skills;
@@ -29,12 +30,13 @@ function App() {
   const aboutMe = data.aboutMe;
   // const videos = data.videos;
 
-  const skillSection = useRef(null);
-  const educationSection = useRef(null);
-  const experienceSection = useRef(null);
-  const achievementSection = useRef(null);
-  const projectSection = useRef(null);
-  const publicationSection = useRef(null);
+  const skillSectionRef = useRef(null);
+  const educationSectionRef = useRef(null);
+  const experienceSectionRef = useRef(null);
+  const achievementSectionRef = useRef(null);
+  const problemSolvingSectionRef = useRef(null);
+  const projectSectionRef = useRef(null);
+  const publicationSectionRef = useRef(null);
   const youtubeSection = useRef(null);
 
   const scrollToSection = (elementRef) => {
@@ -48,12 +50,13 @@ function App() {
     <>
       <Navbar
         scrollToSection={scrollToSection}
-        skillSection={skillSection}
-        educationSection={educationSection}
-        experienceSection={experienceSection}
-        achievementSection={achievementSection}
-        projectSection={projectSection}
-        publicationSection={publicationSection}
+        skillSectionRef={skillSectionRef}
+        educationSectionRef={educationSectionRef}
+        experienceSectionRef={experienceSectionRef}
+        achievementSectionRef={achievementSectionRef}
+        problemSolvingSectionRef={problemSolvingSectionRef}
+        projectSectionRef={projectSectionRef}
+        publicationSectionRef={publicationSectionRef}
         // youtubeSection={youtubeSection}
       />
 
@@ -137,8 +140,7 @@ function App() {
       </div>
 
       {/* ---------------Skills Section----------------- */}
-      <section className="mt-6 p-8" ref={skillSection}>
-        <h6 className="text-4xl font-semibold text-gray-300">Skills</h6>
+      <Section key={1} title={"Skills"} sectionRef={skillSectionRef}>
         <div
           className="p-5 border-2 border-gray-500 mt-4 container mx-auto md:max-w-[80%]
           hover:bg-sky-700 transition-colors ease-in-out duration-300 shadow-lg
@@ -148,87 +150,83 @@ function App() {
             return <SkillItem key={index} {...skill} />;
           })}
         </div>
-      </section>
+      </Section>
 
       {/* ---------------Education Section----------------- */}
-      <section className="mt-6 p-8" ref={educationSection}>
-        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
-          Education
-        </h6>
+      <Section
+        key={2}
+        title={"Education "}
+        sectionRef={educationSectionRef}
+        className={
+          "[&>div]:py-4 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0 \
+          [&>div:last-child]:border-b-0 [&>div]:border-b-4 [&>div]:border-gray-500 \
+          [&>div]:border-opacity-90"
+        }
+      >
         {educations.map((education, index) => {
-          return (
-            <>
-              <EducationItem key={index} {...education} />
-              {index < educations.length - 1 && (
-                <div className="w-full h-1 bg-gray-500 opacity-[90%] mx-0 my-4"></div>
-              )}
-            </>
-          );
+          return <EducationItem key={index} {...education} />;
         })}
-      </section>
+      </Section>
 
       {/* ---------------Experience Section----------------- */}
-      <section className="mt-6 p-8" ref={experienceSection}>
-        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
-          Experience
-        </h6>
+      <Section key={3} title={"Experience "} sectionRef={experienceSectionRef}>
         <div className="grid grid-cols-1 gap-4 place-items-center items-stretch md:grid-cols-2">
           {experiences.map((experience, index) => {
             return <ExperienceCard key={index} {...experience} />;
           })}
         </div>
-      </section>
+      </Section>
 
       {/* ---------------Achievement Section----------------- */}
-      <section className="mt-6 p-8" ref={achievementSection}>
-        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
-          Achievement
-        </h6>
+      <Section
+        key={4}
+        title={"Achievements"}
+        sectionRef={achievementSectionRef}
+      >
         <div className="flex justify-center items-stretch gap-4 flex-wrap">
           {achievements.map((achievement, index) => {
             return <AchievementCard key={index} {...achievement} />;
           })}
         </div>
-      </section>
+      </Section>
 
       {/* ---------------Problem Solving Section----------------- */}
-      <section className="mt-6 p-8" ref={problemSolving}>
-        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
-          Problem Solving
-        </h6>
+      <Section
+        key={5}
+        title={"Problem Solving"}
+        sectionRef={problemSolvingSectionRef}
+      >
         <div className="flex justify-center items-center gap-4 flex-wrap">
           {problemSolving.map((ps, index) => {
             return <ProblemSolvingCard key={index} {...ps} />;
           })}
         </div>
-      </section>
+      </Section>
 
       {/* ---------------Projects Section----------------- */}
-      <section className="mt-6 p-8" ref={projectSection}>
-        <h6 className="text-4xl font-semibold text-gray-300 mb-10">Projects</h6>
+      <Section key={6} title={"Projects"} sectionRef={projectSectionRef}>
         <div className="flex justify-center items-stretch gap-4 flex-wrap">
           {projects.map((project, index) => {
             return <ProjectCard key={index} {...project} />;
           })}
         </div>
-      </section>
+      </Section>
 
       {/* ---------------Publications Section----------------- */}
-      <section className="mt-6 p-8" ref={publicationSection}>
-        <h6 className="text-4xl font-semibold text-gray-300 mb-10">
-          Research & Publications
-        </h6>
+      <Section
+        key={7}
+        title={"Research & Publications"}
+        sectionRef={publicationSectionRef}
+        className={
+          "[&>div]:py-4 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0 \
+          [&>div:last-child]:border-b-0 [&>div]:border-b-4 [&>div]:border-gray-500 \
+          [&>div]:border-opacity-90"
+        }
+      >
         {publications.map((publication, index) => {
-          return (
-            <>
-              <PublicationItem key={index} {...publication} />
-              {index < publications.length - 1 && (
-                <div className="w-full h-1 bg-gray-500 opacity-[90%] mx-0 my-4"></div>
-              )}
-            </>
-          );
+          return <PublicationItem key={index} {...publication} />;
         })}
-      </section>
+      </Section>
 
       {/* ---------------Youtube Section----------------- */}
       {/* <section className="mt-6 p-8" ref={youtubeSection}>

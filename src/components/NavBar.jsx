@@ -2,12 +2,13 @@ import { useState } from "react";
 
 export default function Navbar({
   scrollToSection,
-  skillSection,
-  educationSection,
-  experienceSection,
-  achievementSection,
-  projectSection,
-  publicationSection,
+  skillSectionRef,
+  educationSectionRef,
+  experienceSectionRef,
+  achievementSectionRef,
+  problemSolvingSectionRef,
+  projectSectionRef,
+  publicationSectionRef,
   // youtubeSection,
 }) {
   const [isVisible, setVisible] = useState(false);
@@ -34,14 +35,21 @@ export default function Navbar({
             lg:[&>li]:min-w-fit"
           }
         >
-          <li onClick={() => scrollToSection(skillSection)}>Skills</li>
-          <li onClick={() => scrollToSection(educationSection)}>Education</li>
-          <li onClick={() => scrollToSection(experienceSection)}>Experience</li>
-          <li onClick={() => scrollToSection(achievementSection)}>
+          <li onClick={() => scrollToSection(skillSectionRef)}>Skills</li>
+          <li onClick={() => scrollToSection(educationSectionRef)}>
+            Education
+          </li>
+          <li onClick={() => scrollToSection(experienceSectionRef)}>
+            Experience
+          </li>
+          <li onClick={() => scrollToSection(achievementSectionRef)}>
             Achievements
           </li>
-          <li onClick={() => scrollToSection(projectSection)}>Projects</li>
-          <li onClick={() => scrollToSection(publicationSection)}>
+          <li onClick={() => scrollToSection(problemSolvingSectionRef)}>
+            Problem Solving
+          </li>
+          <li onClick={() => scrollToSection(projectSectionRef)}>Projects</li>
+          <li onClick={() => scrollToSection(publicationSectionRef)}>
             Publications
           </li>
           {/* <li onClick={() => scrollToSection(youtubeSection)}>YouTube</li> */}
