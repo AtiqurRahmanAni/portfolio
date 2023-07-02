@@ -9,6 +9,7 @@ import AchievementCard from "./components/AchievementCard";
 import ProblemSolvingCard from "./components/ProblemSolvingCard";
 import ProjectCard from "./components/ProjectCard";
 import PublicationItem from "./components/PublicationItem";
+import YoutubeCard from "./components/YoutubeCard";
 
 function App() {
   const skills = data.skills;
@@ -18,6 +19,8 @@ function App() {
   const problemSolving = data.problemSolving;
   const projects = data.projects;
   const publications = data.publications;
+  const aboutMe = data.aboutMe;
+  const videos = data.videos;
 
   const skillSection = useRef(null);
   const educationSection = useRef(null);
@@ -25,6 +28,7 @@ function App() {
   const achievementSection = useRef(null);
   const projectSection = useRef(null);
   const publicationSection = useRef(null);
+  const youtubeSection = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -43,6 +47,7 @@ function App() {
         achievementSection={achievementSection}
         projectSection={projectSection}
         publicationSection={publicationSection}
+        youtubeSection={youtubeSection}
       />
 
       <div
@@ -73,23 +78,21 @@ function App() {
           </a>
         </button>
       </div>
-      <div className="md:grid grid-cols-4 text-center gap-4 my-10 mx-5 p-3 md:p-0">
-        <div className="border-4 border-gray-500 shadow-xl">
+      <div className="flex flex-col items-center justify-center p-5 mt-5 flex-wrap gap-6 lg:flex-row">
+        <div className="border-4 border-gray-500 shadow-xl max-w-[20rem]">
           <img
-            className="cover h-full"
+            className="cover w-full h-full"
             src="./images/avatar.jpg"
             alt="avatar"
           />
         </div>
-        <div className="sm:text-start col-span-3">
+        <div className="text-center flex-1 lg:text-start">
           <h4 className="mb-0 text-2xl text-gray-300 font-semibold">
             Md. Atiqur Rahman
           </h4>
           <p className="text-xl mt-2 text-gray-300">Junior Software Engineer</p>
-          <p className="text-lg text-gray-300 mt-4">
-            I am a B.Sc. graduate student from the Ahsanullah University of
-            Science and Technology. Keen to pursue a career as a professional
-            programmer.
+          <p className="text-[1.420rem] text-justify text-gray-300 mt-4">
+            {aboutMe}
           </p>
         </div>
       </div>
@@ -170,10 +173,7 @@ function App() {
       {/* ---------------Projects Section----------------- */}
       <section className="mt-6 p-8" ref={projectSection}>
         <h6 className="text-4xl font-semibold text-gray-300 mb-10">Projects</h6>
-        <div
-          className="grid grid-cols-1 gap-5 place-items-center 
-          items-stretch md:grid-cols-2 lg:grid-cols-3"
-        >
+        <div className="flex justify-center items-stretch gap-4 flex-wrap">
           {projects.map((project, index) => {
             return <ProjectCard key={index} {...project} />;
           })}
@@ -195,6 +195,26 @@ function App() {
             </>
           );
         })}
+      </section>
+
+      {/* ---------------Youtube Section----------------- */}
+      <section className="mt-6 p-8" ref={youtubeSection}>
+        <h6 className="text-4xl font-semibold text-gray-300">YouTube</h6>
+        <div className="my-6">
+          <a
+            href="https://youtube.com/@codingwitharduino7558"
+            target="_blank"
+            className="text-sky-500 text-[1.25rem] font-semibold underline"
+          >
+            My youTube channel link
+          </a>
+        </div>
+
+        <div className="flex justify-center items-center gap-4 flex-wrap">
+          {videos.map((link, index) => {
+            return <YoutubeCard key={index} link={link} />;
+          })}
+        </div>
       </section>
     </>
   );

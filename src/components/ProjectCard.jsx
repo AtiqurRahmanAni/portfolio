@@ -10,8 +10,8 @@ export default function ProjectCard({
   return (
     <>
       <div
-        className="min-w-full p-4 rounded-xl shadow-lg 
-          border-2 border-gray-500 hover:bg-sky-700
+        className="min-w-[17rem] max-w-[23rem] p-4 rounded-xl 
+          shadow-lg border-2 border-gray-500 hover:bg-sky-700
           transition-colors ease-in-out duration-500"
       >
         <h6

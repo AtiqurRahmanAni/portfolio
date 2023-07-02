@@ -8,6 +8,7 @@ export default function Navbar({
   achievementSection,
   projectSection,
   publicationSection,
+  youtubeSection,
 }) {
   const [isVisible, setVisible] = useState(false);
 
@@ -18,7 +19,7 @@ export default function Navbar({
           className={
             (isVisible ? "flex" : "hidden") +
             " justify-end items-center flex-col text-base \
-            gap-5 bg-[#131534] py-4 px-10 \
+            gap-2 bg-[#131534] py-4 px-10 \
             text-gray-300 font-semibold \
             [&>li:hover]:bg-sky-500 \
             [&>li:hover]:text-white \
@@ -43,6 +44,7 @@ export default function Navbar({
           <li onClick={() => scrollToSection(publicationSection)}>
             Publications
           </li>
+          <li onClick={() => scrollToSection(youtubeSection)}>YouTube</li>
         </ul>
 
         <span
