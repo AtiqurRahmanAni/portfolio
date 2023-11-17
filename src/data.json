@@ -158,7 +158,8 @@
       "conferenceName": "Computing and Communication Workshop and Conference",
       "conferenceLocation": "Las Vegas, NV, USA",
       "link": "https://ieeexplore.ieee.org/document/10099305",
-      "image": "./images/nlp.png"
+      "image": "./images/nlp.png",
+      "publisher": "IEEE Xplore"
     },
     {
       "paperTitle": "LFR Waiter: Arduino Based Android Application Controlled Waiter Robot",
@@ -166,7 +167,17 @@
       "conferenceName": "TENCON 2022 - 2022 IEEE Region 10 Conference (TENCON)",
       "conferenceLocation": "Hong Kong, China",
       "link": "https://ieeexplore.ieee.org/document/9977936",
-      "image": "./images/robotics.jpg"
+      "image": "./images/robotics.jpg",
+      "publisher": "IEEE Xplore"
+    },
+    {
+      "paperTitle": "Evaluating the Reliability of CNN Models on Classifying Traffic and Road Signs using LIME",
+      "publicationYear": "2023",
+      "conferenceName": "International Conference on Big Data, IoT and Machine Learning 2023",
+      "conferenceLocation": "Dhaka, Bangladesh",
+      "link": "https://arxiv.org/pdf/2309.05747.pdf",
+      "image": "./images/road_sign.png",
+      "publisher": "Springer"
     }
   ],
   "videos": [

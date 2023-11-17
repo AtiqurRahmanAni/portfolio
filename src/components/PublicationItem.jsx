@@ -7,6 +7,7 @@ export default function PublicationItem({
   conferenceLocation,
   link,
   image,
+  publisher,
 }) {
   return (
     <div
@@ -14,7 +15,7 @@ export default function PublicationItem({
         items-center flex-col gap-2 md:flex-row md:gap-10"
     >
       <img
-        className="max-w-[400px] max-h-[210px] hidden lg:block"
+        className="w-[300px] h-[210px] hidden lg:block"
         src={image}
         alt="aust"
       />
@@ -39,7 +40,7 @@ export default function PublicationItem({
               target="_blank"
               className="text-sky-500 text-[1.25rem] font-semibold underline "
             >
-              IEEE Xplore
+              {publisher}
             </a>
           </p>
         </div>

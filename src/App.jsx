@@ -9,7 +9,6 @@ import AchievementCard from "./components/AchievementCard";
 import ProblemSolvingCard from "./components/ProblemSolvingCard";
 import ProjectCard from "./components/ProjectCard";
 import PublicationItem from "./components/PublicationItem";
-import YoutubeCard from "./components/YoutubeCard";
 import {
   TiSocialFacebookCircular,
   TiSocialLinkedinCircular,
@@ -80,10 +79,10 @@ function App() {
           mt-8 hover:text-white transition-colors ease-in-out duration-200"
         >
           <a
-            href="https://drive.google.com/file/d/1RjLBWgzDAKAxgwjmSjjsYRFh_1qMPApv/view?usp=sharing"
+            href="https://drive.google.com/file/d/10tUg3N6MIxuRKaDYG6Hd7V0yMcEhjW8f/view?usp=sharing"
             target="_blank"
           >
-            Download CV
+            Download Resume
           </a>
         </button>
         <IconContext.Provider
